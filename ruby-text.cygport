@@ -1,0 +1,9 @@
+inherit rubygem
+
+NAME="ruby-text"
+VERSION=1.2.1
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby text algorithm module"
+DESCRIPTION="A collection of text algorithms: Levenshtein, Soundex, Metaphone,
+Double Metaphone, Porter Stemming."
