@@ -1,9 +1,15 @@
 inherit rubygem
 
 NAME="ruby-text"
-VERSION=1.2.1
+VERSION=1.3.0
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby text algorithm module"
 DESCRIPTION="A collection of text algorithms: Levenshtein, Soundex, Metaphone,
 Double Metaphone, Porter Stemming."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_text_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_text_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
